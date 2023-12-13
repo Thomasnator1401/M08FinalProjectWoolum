@@ -1,24 +1,26 @@
 body {
     font-family: Arial, sans-serif;
 }
- 
+
 #hero {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5;
+    background-color: #00ff55;
 }
- 
+
 #about {
+    background-color: #ffd000;
     padding: 40px 0;
 }
- 
+
 #courses {
+    background-color: #ff1313;
     padding: 40px 0;
 }
- 
+
 #contact {
-    background-color: #e9ecef;
+    background-color: #0080ff;
     padding: 40px 0;
 }
