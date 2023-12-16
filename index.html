@@ -5,52 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-    <title>Thomas Woolum's WebPage</title>
+    <title>Woolum University</title>
   </head>
   <body>
     <header>
       <h1>
-        <a href="index.html">Thomas Woolum's WebPage</a>
+        <a href="index.html">Woolum University</a>
       </h1>
     </header>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="vacations.html">Vacations</a></li>
-        <li><a href="computers.html">Computers</a></li>
-        <li><a href="myfavoritesingers.html">My Favorite Singers</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
+        <ul>
+            <li>Course: Introduction to Programming</li>
+            <li>Teacher: Joe Snow</li>
+            <li>Course: Data Structures and Algorithms</li>
+            <li>Teacher: Lacey Snow</li>
+          </ul>          
       </ul>
+      <table>
+        <tr>
+          <th>Course name</th>
+          <th>Course description</th>
+          <th>Subject area</th>
+          <th>Number of credits</th>
+        </tr>
+        <tr>
+          <td>Introduction to Programming</td>
+          <td>A basic course on programming concepts and languages</td>
+          <td>Computer Science</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Data Structures and Algorithms</td>
+          <td>A course on the design and analysis of data structures and algorithms</td>
+          <td>Computer Science</td>
+          <td>4</td>
+        </tr>
+      </table>
+      <br>
+      <table>
+        <tr>
+          <th>Course name</th>
+          <th>Course description</th>
+          <th>Subject area</th>
+          <th>Number of credits</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Web Development</td>
+          <td>A course on the fundamentals of web development using HTML, CSS, and JavaScript</td>
+          <td>Computer Science</td>
+          <td>3</td>
+          <td><button onclick="addClass('web-development')">Add</button></td>
+        </tr>
+        <tr>
+          <td>Calculus</td>
+          <td>A course on the concepts and applications of calculus</td>
+          <td>Mathematics</td>
+          <td>4</td>
+          <td><button onclick="addClass('calculus')">Add</button></td>
+        </tr>
+        <!-- Add more classes here -->
+      </table>
+      
     </nav>
     <div id="wrapper">
       <div id="profile"></div>
       <main>
-        <h2>Thomas Woolum's WebPage</h2>
+        <h2>Woolum University</h2>
         <p>
-          <span class="resort">Biography</span>
-          - My dad and I has lived in the same exact house we live at today
-          since back in October 5, 1996. My favorite foods are mac & cheese,
-          peanut Butter & jelly sandwiches, rasbperry filled donuts, and etc. My
-          favorite drinks are cold water, crystal light lemonade, H-C orange,
-          and etc. My house has 23 working computers and 1 computer which don't
-          work which we are using for parts. There were 6 computers that were
-          inside my house which were recycled at Best Buy.
+          <span class="resort">Woolum University</span>
+          - Woolum Universty is an University that can let us learn about degrees.
         </p>
-        <ul>
-          <li>We first moved into our current house back in 1996..</li>
-          <li>Mac & Cheese is my #1 favorite food.</li>
-          <li>Cold water is my #1 favorite drink.</li>
-          <li>
-            There are 23 working computers inside my house now plus one computer
-            that we are using for parts.
-          </li>
-          <li>
-            There were 6 computers which were inside my house which got recycled
-            at Best Buy.
-          </li>
-        </ul>
+        <form action="/add_course" method="POST">
+            <label for="name">Course name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="description">Course description:</label><br>
+            <input type="text" id="description" name="description" required><br></br>
+            <label for="subject">Subject area:</label><br>
+            <input type="text" id="subject" name="subject" required><br></br>
+            <label for="credits">Number of credits:</label><br>
+            <input type="number" id="credits" name="credits" required><br></br>
+            <input type="submit" value="Add course">
+          </form>          
         <div>
+        <br>
           <span class="resort">Abilities Richmond</span> <br />
           831 N E Street, <br />
           Richmond, IN 47374 <br />
@@ -62,7 +101,7 @@
       <footer>
         <br />
         <p>
-          Copyright &copy; 2023 Thomas Woolum's WebPage <br />
+          Copyright &copy; 2023 Woolum University <br />
           <a href="mailTo:thomaswoolum@comcast.net">thomaswoolum@comcast.net</a>
         </p>
       </footer>
